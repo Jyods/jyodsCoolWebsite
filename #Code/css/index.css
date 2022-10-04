@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+        height: 30000px; /* Used to enable scrolling */
+        transition: background-color 1s ease;
+}
+
+#header {
+        background-color: #f1f1f1; /* Grey background */
+        padding: 50px 10px; /* Some padding */
+        color: black;
+        text-align: center; /* Centered text */
+        font-size: 90px; /* Big font size */
+        font-weight: bold;
+        position: fixed; /* Fixed position - sit on top of the page */
+        top: 0;
+        width: 100%; /* Full width */
+        transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+      }
+
+
+#title h1 {
+    color: blue;
+    text-align: center;
+}
