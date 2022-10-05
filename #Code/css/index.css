@@ -6,7 +6,7 @@
 }
 
  body {
-        height: 3000px;  /* Used to enable scrolling */
+        /* height: 3000px;   Used to enable scrolling */
         transition: background-color 1s ease;
 }
 
@@ -14,7 +14,7 @@
         background-color: #f1f1f1; /* Grey background */
         color: black;
         text-align: center; /* Centered text */
-        font-size: 50px; /* Big font size */
+        font-size: 70px; /* Big font size */
         font-weight: bold;
         position: fixed; /* Fixed position - sit on top of the page */
         top: 0;
@@ -43,6 +43,8 @@ body {
     justify-content: space-around;
     align-items: center;
     font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
     /* outline: 10px solid hotpink; */
     /* turn above on to see the edge of panels */
   }
@@ -90,4 +92,8 @@ body {
   }
   a {
     color: #4332CF;
+  }
+
+  .in-panel {
+    border: 1px solid blue;
   }
