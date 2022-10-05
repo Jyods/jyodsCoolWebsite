@@ -1,17 +1,12 @@
 * {
     box-sizing: border-box;
     border: 1px solid red;
-        margin:0;
-        padding:0;
-}
-
- body {
-        /* height: 3000px;   Used to enable scrolling */
-        transition: background-color 1s ease;
+    margin:0;
+    padding:0;
 }
 
 #header {
-        background-color: #f1f1f1; /* Grey background */
+        background-color: #7474743a; /* Grey background */
         color: black;
         text-align: center; /* Centered text */
         font-size: 70px; /* Big font size */
@@ -21,12 +16,6 @@
         width: 100%; /* Full width */
         transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
       }
-
-
-#title h1 {
-    color: blue;
-    text-align: center;
-}
 
 /* Setting fade transition and default settings */
 body {
@@ -53,7 +42,7 @@ body {
   .color-white {
     background-color: #fff;
   }
-    .color-violet {
+  .color-violet {
     background-color: #7A4EAB;
   }
   .color-indigo {
@@ -74,7 +63,13 @@ body {
   .color-red {
     background-color: #F2293A;
   }
-  
+  .color-col1 {
+    background-color: #3F3F3F;
+  }
+  .color-col2 {
+    background-color: #6E6E6E;
+  }
+
   /* styling for demo, can ignore */
   body {
     text-align: center;
