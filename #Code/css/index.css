@@ -3,10 +3,11 @@
     border: 1px solid red;
     margin:0;
     padding:0;
+    height: 100%;
 }
 
 #header {
-        background-color: #7474743a; /* Grey background */
+        background-color: #74747400; /* Grey background */
         color: black;
         text-align: center; /* Centered text */
         font-size: 70px; /* Big font size */
@@ -91,4 +92,15 @@ body {
 
   .in-panel {
     border: 1px solid blue;
+  }
+
+  #header-pic {
+    height: 100%;
+    border-color: #7A4EAB;
+    border-style: double;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url("../img/background.jpg");
+    background-position: center;
   }
