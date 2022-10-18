@@ -6,6 +6,14 @@
     height: 100%;
 }
 
+p {
+  height: auto;
+}
+
+div {
+  height: auto;
+}
+
 #header {
         background-color: #74747400; /* Grey background */
         color: black;
@@ -15,7 +23,19 @@
         position: fixed; /* Fixed position - sit on top of the page */
         top: 0;
         width: 100%; /* Full width */
-        transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+        transition: 0.6s; /* Add a transition effect (when scrolling - and font size is decreased) */
+        padding-top: 10%;
+        height: auto;
+      }
+
+#header-btn {
+  height: 20%;
+  opacity: 100;
+}
+
+button.header-btn {
+  height: auto;
+  width: auto;
       }
 
 /* Setting fade transition and default settings */
@@ -82,16 +102,16 @@ body {
     letter-spacing: -0.05em;
     line-height: 1.1;
   }
-  p {
+  .in-panel {
     max-width: 30em;
     margin-bottom: 1.618em;
-  }
+    height: auto;
+    border: 1px solid blue;
+    height: auto !important;
+    }
+
   a {
     color: #4332CF;
-  }
-
-  .in-panel {
-    border: 1px solid blue;
   }
 
   #header-pic {
@@ -101,7 +121,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/bckg.jpg");
     background-position: center;
   }
 
@@ -133,4 +153,135 @@ body {
   height: 40px;
   background-color: #020202;
   opacity: 0.7;
+}
+
+/* Button */
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* Shimmer */
+
+p.shimmer {
+  width: 100%;
+  height: auto;
+}
+
+.shimmer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+      background-position: top left;
+  }
+  100% {
+      background-position: top right;
+  }
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+      background-position: top left;
+  }
+  100% {
+      background-position: top right;
+  }
+}
+
+@-o-keyframes shimmer {
+  0% {
+      background-position: top left;
+  }
+  100% {
+      background-position: top right;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+      background-position: top left;
+  }
+  100% {
+      background-position: top right;
+  }
 }
