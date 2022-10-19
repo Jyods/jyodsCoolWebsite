@@ -11,6 +11,8 @@ function scrollFunction() {
     document.getElementById("header-btn").style.height = "0px";
     document.getElementById("header-btn").style.opacity = "0";
     document.getElementById("header-btn").style.transition = "0.5s";
+    document.getElementById("hamburger-menu").style.opacity = "100";
+    document.getElementById("hamburger-menu").style.transition = "1s";
   } else {
     document.getElementById("header").style.fontSize = "70px";
     document.getElementById("header").style.paddingTop = "10%";
@@ -18,6 +20,8 @@ function scrollFunction() {
     document.getElementById("header-btn").style.height = "0px";
     document.getElementById("header-btn").style.opacity = "100";
     document.getElementById("header-btn").style.transition = "0.5s";
+    document.getElementById("hamburger-menu").style.opacity = "0";
+    document.getElementById("hamburger-menu").style.transition = "0.2s";
   }
 }
 
