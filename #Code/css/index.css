@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+/*    border: 1px solid red; */
     margin:0;
     padding:0;
     height: 100%;
@@ -31,6 +31,7 @@ div {
 #header-btn {
   height: 20%;
   opacity: 100;
+  background-color: #00000000;
 }
 
 button.header-btn {
@@ -41,14 +42,15 @@ button.header-btn {
 /* Setting fade transition and default settings */
 body {
     color: #000;
-    background-color: #f4f4f4;
+    background-color: #3F3F3F;
     transition: background-color 1s ease;
   }
   
   /* panel styles */
   .panel {
     /* min height incase content is higher than window height */
-    min-height: 100vh;
+    min-height: 70vh;
+    padding-bottom: 50vh;
     display: flex;
     justify-content: space-around;
     align-self: center;
@@ -59,6 +61,24 @@ body {
     /* turn above on to see the edge of panels */
   }
   
+  /* Box Inhalt */
+
+  #box-title {
+    padding-top: 100px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  #box-formation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    height: auto;
+    max-width: 300px;
+  }
+
+
   /* colours */
   .color-white {
     background-color: #fff;
@@ -285,3 +305,6 @@ p.shimmer {
       background-position: top right;
   }
 }
+
+/* Nav */
+
