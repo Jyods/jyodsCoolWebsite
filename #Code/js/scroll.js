@@ -5,7 +5,25 @@ $(window).scroll(function() {
         $body = $('body'),
         $panel = $('.panel');
         $test = $('.test')
-    
+
+/* Fade start */
+
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var tags = $(".fade");
+
+    for (var i = 0; i < tags.length; i++) {
+      var tag = tags[i];
+  
+      if ($(tag).position().top < pageBottom) {
+        $(tag).addClass("visible");
+      } else {
+        $(tag).removeClass("visible");
+      }
+    }
+
+/* Fade end */
+
     // Change 33% earlier than scroll position so colour is there when you arrive.
     var scroll = $window.scrollTop() + ($window.height() / 3);
    
@@ -26,6 +44,8 @@ $(window).scroll(function() {
         $body.addClass('color-' + $(this).data('color'));
         $test.addClass('color-' + $(this).data('color'));
       }
+
     });    
     
   }).scroll();
+  

@@ -4,6 +4,7 @@
     margin:0;
     padding:0;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -393,4 +394,17 @@ li {
 
 .menu__item:hover {
   background-color: #CFD8DC;
+}
+
+/* Fade */
+
+.fade {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translate(0, 0);
 }
