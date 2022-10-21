@@ -8,6 +8,7 @@ function scrollFunction() {
     document.getElementById("header").style.fontSize = "40px";
     document.getElementById("header").style.paddingTop = "0%";
     document.getElementById("header").style.backgroundColor = "#000000";
+    document.getElementById("header").style.zIndex = "10";
     document.getElementById("header-btn").style.height = "0px";
     document.getElementById("header-btn").style.opacity = "0";
     document.getElementById("header-btn").style.transition = "0.5s";
@@ -19,6 +20,7 @@ function scrollFunction() {
     document.getElementById("header").style.fontSize = "70px";
     document.getElementById("header").style.paddingTop = "10%";
     document.getElementById("header").style.backgroundColor = "#00000000";
+    document.getElementById("header").style.zIndex = "1";
     document.getElementById("header-btn").style.height = "0px";
     document.getElementById("header-btn").style.opacity = "100";
     document.getElementById("header-btn").style.transition = "0.5s";
