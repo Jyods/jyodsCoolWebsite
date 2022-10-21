@@ -250,9 +250,9 @@ p.shimmer {
   -webkit-animation-name: shimmer;
   -moz-animation-name: shimmer;
   animation-name: shimmer;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 3.5s;
+  -moz-animation-duration: 3.5s;
+  animation-duration: 3.5s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
