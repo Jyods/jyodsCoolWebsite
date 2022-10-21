@@ -17,7 +17,7 @@ div {
 
 #header {
         background-color: #74747400; /* Grey background */
-        color: black;
+        color: #8D8D92;
         text-align: center; /* Centered text */
         font-size: 70px; /* Big font size */
         font-weight: bold;
@@ -45,6 +45,9 @@ body {
     color: #000;
     background-color: #3F3F3F;
     transition: background-color 1s ease;
+    text-align: center;
+    font-size: 120%;
+    line-height: 1.618;
   }
   
   /* panel styles */
@@ -106,23 +109,14 @@ body {
     background-color: #F2293A;
   }
   .color-col1 {
-    background-color: #3F3F3F;
+    background-color: #BEB2C8;
   }
   .color-col2 {
-    background-color: #6E6E6E;
+    background-color: #D7D6D6;
   }
 
   /* styling for demo, can ignore */
-  body {
-    text-align: center;
-    font-size: 120%;
-    line-height: 1.618;
-  }
-  h1, h2 {
-    font-size: 3em;
-    letter-spacing: -0.05em;
-    line-height: 1.1;
-  }
+
   .in-panel {
     max-width: 30em;
     margin-bottom: 1.618em;
@@ -137,8 +131,6 @@ body {
 
   #header-pic {
     height: 100%;
-    border-color: #7A4EAB;
-    border-style: double;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -146,9 +138,7 @@ body {
     background-position: center;
   }
 
-  /* Slider */
-
-  * {box-sizing: border-box;}
+/* Slider */
 
 .img-comp-container {
   position: relative;
@@ -372,14 +362,14 @@ p.shimmer {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #ECEFF1;
+  background-color: #32292F;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
 }
 .menu__item {
   display: block;
   padding: 12px 24px;
-  color: #333;
+  color: #FFF;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -407,4 +397,15 @@ li {
 .fade.visible {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+#language-change {
+  size: 1px;
+  position: fixed;
+  left: 96.9%;
+  width: 42px !important;
+  height: 30px !important;
+  z-index: 1;
+  opacity: 1;
+  transition: ease-in-out;
 }
