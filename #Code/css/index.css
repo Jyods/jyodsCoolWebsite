@@ -399,12 +399,14 @@ li {
   transform: translate(0, 0);
 }
 
+/* Language Change Flag */
+
 #language-change {
   size: 1px;
   position: fixed;
   left: 96.9%;
-  width: 42px !important;
-  height: 30px !important;
+  width: 42px;
+  height: 30px;
   z-index: 1;
   opacity: 1;
   transition: ease-in-out;
