@@ -4,7 +4,6 @@ $(window).scroll(function() {
     var $window = $(window),
         $body = $('body'),
         $panel = $('.panel');
-        $test = $('.test')
 
 /* Fade start */
 
@@ -42,7 +41,6 @@ $(window).scroll(function() {
          
         // Add class of currently active div
         $body.addClass('color-' + $(this).data('color'));
-        $test.addClass('color-' + $(this).data('color'));
       }
 
     });    
